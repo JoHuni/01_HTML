@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>02_목록 관련 태그</title>
+</head>
+<body>
+    <h1>ul(Unordered List) : 순서가 없는 목록</h1>
+    <h1>li(List Item) 태그 : 목록의 한 줄(목록 중 낱개 하나)</h1>
+    <ul>
+        점메추
+        <li>김밤</li>
+        <li>샌드위치</li>
+        <li>라면</li>
+        <li>순대국</li>
+    </ul>
+    <hr>
+
+    <h1>Emmet : HTML, CSS의 빠른 자동완성을 지원하는 플러그인</h1>
+    <p>
+        태그명 : 태그 자동 완성<br>
+        > : 태그 내부에 작성한다(하위) <br>
+        + : 형제(같은 레벨)로 작성<br>
+        * 숫자 : 숫자 만큼 생성(곱하기) <br>
+        {} : 태그 내부에 작성될 내용 <br>
+        $ : 1부터 1씩 증가하는 숫자
+    </p>
+
+    <ul>
+        <li>아이템1</li>
+        <li>아이템2</li>
+        <li>아이템3</li>
+        <li>아이템4</li>
+        <li>아이템5</li>
+    </ul>
+    <hr>
+    <h1>ol(Ordered List) : 순서가 있는 목록</h1>
+    <p>
+        type 속성 : 표시되는 숫자 모양을 변경<br>
+        type="a, A"; : 영어 소, 대문자로 나타남<br>
+        type="i, I" : 로마자로 표시<br>
+
+        start 속성 : 시작 숫자 지정<br>
+        reversed 속성 : 숫자를 역순부터 시작
+    </p>
+    <ol type="1" start="10" reversed>
+        <li>컴퓨터</li>
+        <li>책상</li>
+        <li>의자</li>
+        <li>조명</li>
+    </ol>
+    <hr>
+    <h1>dl(Description List) 태그 : 설명 목록</h1>
+    <p>
+        dl 태그 : 설명 목록이 작성될 판<br>
+        dt 태그 : 설명의 제목<br>
+        dd 태그 : 설명 내용<br>
+    </p>
+    <dl>
+        <dt>김밥</dt>
+        <dd>김에 밥을 펴서 바르고, 각종 야채를 넣은 음식</dd>
+        <dd>종류로는 참치, 김치, 야채, 치즈, 돈까스 등이 있다</dd>
+
+        <dt>라면</dt>
+        <dd>라면은 맛있다</dd>
+        <dd>라면은 매일 먹을 수 있다?</dd>
+    </dl>
+
+    <h1>목록 중첩 작성</h1>
+        <li>
+            분식
+            <ol>
+                <li>라면</li>
+                <li>
+                    김밥
+                    <ul>
+                        <li>참치김밥</li>
+                        <li>고추김밥</li>
+                        <li>돈가스김밥</li>
+                    </ul>
+                </li>
+                <li>우동</li>
+            </ol>
+        </li>
+        <li>
+            샌드위치
+            <ol>
+                <li>애그마요</li>
+                <li>쉬림프</li>
+                <li>이탈리안BMT</li>
+                <li>햄</li>
+                <li>스테이크치즈</li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>

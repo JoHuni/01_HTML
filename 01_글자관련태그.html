@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- 컨트롤 슬래시 주석 첨알음 -->
+<!-- 
+    !DOCTYPE = 문서의 형식 정의
+    !DOCTYPE html = 이거 html 문서임
+-->
+<html lang="ko"> <!-- html 시작 -->
+<!-- html 태그 : html 문서 내용을 작성하는 태그
+이 안에다가 html 코드 작성하셈 밖에다가 하면 안 읽어줄거임 -->
+<!-- 들여쓰기 잘하셈 -->
+<head> <!-- head 태그 : html 문서 정의 내용 작성 -->
+    <meta charset="UTF-8">
+    <title>이건 제목</title>
+</head>
+<body>
+    body 태그 : 화면에 보여질 내용 작성하는 곳
+    <!-- h2에서 h는 highlight : 걍 제목에 씀 -->
+    <h1>h1은 크기가 제일 큼</h1>
+    <h2>h2임</h2>
+    <h3>h3임</h3>
+    <h4>h4임</h4>
+    <h5>h5임</h5>
+    <h6>h6은 크기가 제일 작음</h6>
+    <!-- hr(horizon) : 수평선 -->
+    <hr>
+    <h1>html 문서에서 연속으로 띄어쓰기/엔터 입력 시 문제점</h1>
+    가                                         나
+    
+    
+    
+    
+    
+    다
+    <h3 style="color:red; text-decoration:underline;">
+        연이은 띄어쓰기 또는 엔터는 공백 한 칸으로만 인식함
+    </h3>
+    <hr>
+    <h1>* 띄어쓰기, 엔터를 화면에 표시하는 방법 *</h1>
+    <!-- &nbsp; : 띄어쓰기 한 번 -->
+    1. 띄어쓰기 : 가 &nbsp;&nbsp;&nbsp;&nbsp; 나
+
+    <!-- br(line BReak) : 줄바꿈-->
+    <br>
+    2. 줄바꿈 : 
+    <hr>
+
+    <h1>문단 구분 태그(p, pre)</h1>
+    <h3>p(paragraph : 문단, 단락) 태그</h3>
+    시작
+    <p>
+        글을 작성하는 용도의 태그<br>
+        문단(p 태그) 앞 뒤로 공백이 생김
+    </p>
+    끝
+
+    <h3>pre(PREformatted : 사전 형식 지정)태그
+        pre태그 안에 작성된 그모양 그대로 출력
+    </h3>
+    <pre>
+        들여쓰기도 안 봐주네
+    </pre>
+    <hr><hr>
+
+    <h2>글자에 적용되는 기타 태그들</h2>
+    <p>
+        <b>bold</b><br>
+        <i>기울임</i>
+    </p>
+
+    <p>
+        <strong>이것도 굵음</strong><br>
+        <em>em태그 : 글자(문장)을 강조하는 용도의 태그</em>
+    </p>
+
+    <p>
+        strong, em태그는 웹 접근성을 위해 사용되는 태그이다.<br>
+        웹 접근성이란?<br>
+        일반인 뿐만 아니라 장애인, 고령자들을 위해 웹 사이트에서<br>
+        제공하는 서비스를 모두 이용할 수 있도록 보장한 것<br>
+        대충 현업에선 반드시 strong, em만 써야댐<br>
+        ex) 스크린 리더
+    </p>
+    <hr>
+    <p>
+        mark 태그 : <mark>형광팬 효과</mark><br>
+        u 태그 : <u>밑줄을 긋는 태그</u><br>
+        s 태그 : <s>글자 가운데 선을 긋는 태그(취소선,
+            잘못 작성됨)
+        </s><br>
+        del 태그 : <del>글자 가운데 선을 긋는 태그
+            (삭제선, 이제 없는 것을 표시)</del><br>
+        <!-- s, del은 용도에 맞게 알아서 쓰셈 -->
+        small 태그 : <small>글자를 작게</small><br>
+        sup 태그(윗첨자) : x<sup>3</sup><br>
+
+        sub 태그(아랫첨자) : log<sub>3</sub><br>
+
+        abbr(abbreviation : 약어) 태그 : 마우스 오버 시
+        툴팁을 표시
+        <abbr title="Hyper Text Transfer Protocol">HTTP</abbr>
+    </p>
+
+    <hr><hr><hr>
+    <h3>글자 관련 태그 연습</h3>
+    <p>
+        <mark>태그</mark>들은 항상 태그 내에서 중첩으로 사용 가능하다.<br>
+        <strong>굵은</strong>글자를 사용할 수도 있고, <em>기울이거나, </em><s>취소선</s>을 넣는 등<br>
+        다양하게 사용할 수 있다.   
+    </p>
+
+    
+</body>
+</html> <!-- html 종료 -->
